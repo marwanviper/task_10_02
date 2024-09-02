@@ -27,7 +27,7 @@
 ### ADC Configuration (`adc.h` and `adc.c`)
 
 - **`init_ADC()`**: Sets up the ADC with:
-  - **Reference Voltage**: AVCC (5V or 3.3V depending on your setup).
+  - **Reference Voltage**: AVCC (5V).
   - **Prescaler**: 128 to ensure accurate ADC conversion.
 
 - **`ADC_read(uint8_t channel)`**: Reads the analog value from the specified ADC channel.
@@ -38,8 +38,8 @@
   - **PWM Mode**: Fast PWM, non-inverted.
   - **Prescaler**: 64.
 
-- **`init_Timer1()`**: Configures Timer1 for CTC (Clear Timer on Compare Match) mode to generate an interrupt every 8 seconds.
-  - **Compare Match Value (OCR1A)**: 15624 (for a 16 MHz clock and 1024 prescaler).
+- **`init_Timer1()`**: Configures Timer1 for CTC (Clear Timer on Compare Match) mode to generate an interrupt every 1 seconds.
+  - **Compare Match Value (OCR1A)**: 7812 (for an 8 MHz clock and 1024 prescaler).
   - **Prescaler**: 1024.
 
 ### External Interrupt Configuration (`ext_interrupt.h` and `ext_interrupt.c`)
