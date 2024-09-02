@@ -71,4 +71,7 @@
    - **Encoder**: Connect the encoder's output pins to the appropriate input pins (e.g., PD2 and PD3).
    - **Motor**: Connect motor control pins (PD0, PD1) and ensure proper power connections.
    - **SPI**: Connect SPI pins (MOSI, SCK, SS) to the SPI interface of your receiving device.
-
+## OUTPUT ON SPI DEBUGGER
+- **frist value is the higher bits in hex**
+- **sec value is the lower bits in hex**
+- **it sends separately**
