@@ -65,14 +65,6 @@
 - **RPM Calculation**: Calculates RPM every 8 seconds using the pulse count.
 - **SPI Transmission**: Sends RPM data over SPI to another device or system.
 
-**RPM Calculation Formula:**
-
-\[ \text{RPM} = \frac{\text{Pulse Count} \times 60}{\text{PPR} \times \text{Update Interval}} \]
-
-- **Pulse Count**: Number of pulses detected in 8 seconds.
-- **PPR**: Pulses Per Revolution of the encoder.
-- **Update Interval**: 8 seconds.
-
 ## Setup and Configuration
 
 - **Connect Hardware**
